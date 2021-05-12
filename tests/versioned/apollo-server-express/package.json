@@ -8,8 +8,7 @@
         "node": ">=10"
       },
       "dependencies": {
-        "apollo-server-express": ">=2.14.0",
-        "express": "4.17.1"
+        "apollo-server-express": ">=2.14.0"
       },
       "files": [
         "transaction-naming.test.js",
@@ -19,5 +18,7 @@
       ]
     }
   ],
-  "dependencies": {}
+  "dependencies": {
+    "express": ">=4.17.1"
+  }
 }

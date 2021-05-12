@@ -8,8 +8,7 @@
         "node": ">=10"
       },
       "dependencies": {
-        "apollo-server-hapi": ">=2.14.0",
-        "@hapi/hapi": "18.4.1"
+        "apollo-server-hapi": ">=2.14.0"
       },
       "files": [
         "segments.test.js",
@@ -19,5 +18,7 @@
       ]
     }
   ],
-  "dependencies": {}
+  "dependencies": {
+    "@hapi/hapi": ">=18.4.1"
+  }
 }

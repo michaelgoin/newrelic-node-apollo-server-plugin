@@ -8,8 +8,7 @@
         "node": ">=10"
       },
       "dependencies": {
-        "apollo-server-fastify": ">=2.14.0",
-        "fastify": ">=3.5.0"
+        "apollo-server-fastify": ">=2.14.0"
       },
       "files": [
         "segments.test.js",
@@ -19,5 +18,7 @@
       ]
     }
   ],
-  "dependencies": {}
+  "dependencies": {
+    "fastify": ">=3.5.0"
+  }
 }

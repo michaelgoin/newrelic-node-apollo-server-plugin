@@ -78,7 +78,7 @@ function createTransactionTests(t, frameworkName) {
       }
     }`
 
-    const deepestPath = 'libraries.books.author.name'
+    const deepestPath = 'libraries.books'
 
     helper.agent.on('transactionFinished', (transaction) => {
       t.equal(
@@ -110,7 +110,7 @@ function createTransactionTests(t, frameworkName) {
       }
     }`
 
-    const deepestPath = 'libraries.books.author.name'
+    const deepestPath = 'libraries.books'
 
     helper.agent.on('transactionFinished', (transaction) => {
       t.equal(
@@ -141,7 +141,7 @@ function createTransactionTests(t, frameworkName) {
     }`
 
     // .isbn is the same length but title will be first so that path should be used
-    const firstDeepestPath = 'libraries.books.title'
+    const firstDeepestPath = 'libraries.books'
 
     helper.agent.on('transactionFinished', (transaction) => {
       t.equal(
@@ -263,7 +263,7 @@ function createTransactionTests(t, frameworkName) {
       }
     }`
 
-    const deepestPath = 'library.books.author.name'
+    const deepestPath = 'library.books'
 
     helper.agent.on('transactionFinished', (transaction) => {
       t.equal(
@@ -299,7 +299,7 @@ function createTransactionTests(t, frameworkName) {
       addThing(name: "added thing!")
     }`
 
-    const DeepestPath1 = 'library.books.author.name'
+    const DeepestPath1 = 'library.books'
 
     const queries = [query1, query2]
 
@@ -363,7 +363,6 @@ function createTransactionTests(t, frameworkName) {
     const invalidQuery = `query {
       libraries {
         books {
-          title
           doesnotexist {
             name
           }
@@ -403,7 +402,6 @@ function createTransactionTests(t, frameworkName) {
     const invalidQuery = `query ${expectedName} {
       libraries {
         books {
-          title
           doesnotexist {
             name
           }
